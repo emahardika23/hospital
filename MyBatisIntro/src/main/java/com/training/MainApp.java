@@ -19,7 +19,7 @@ SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(input
 SqlSession session = sqlSessionFactory.openSession();
 try {
 System.out.println("Going to insert record.....");
-Student student = new Student("10123", "Zara", new Date(), "Jl. Suryo 56");
+Student student = new Student("10123", "Zara", new Date(), "Jl. Suryo matahari 56");
 //      First option (using mapper name)
 session.insert("com.training.dao.mapper.StudentMapper.insert", student);
 //      Second option (using mapper class)
